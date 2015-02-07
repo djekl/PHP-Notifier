@@ -1,0 +1,13 @@
+{
+    "require": {
+        "league/flysystem": "0.5.*",
+        "dropbox/dropbox-sdk": "~1.1",
+        "barracuda/copy": "~1.1",
+        "vlucas/phpdotenv": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
