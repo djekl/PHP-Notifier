@@ -17,5 +17,4 @@ Dotenv::required(['DROPBOX_TOKEN', 'DROPBOX_SECRET']);
 
 $notifier = new MacNotifier(getenv('DROPBOX_TOKEN'), getenv('DROPBOX_SECRET'));
 
-// $notifier->notify($title, $text, $url, $icon);
-$notifier->notify('Oh, Hey!', 'Just a friendly greeting', 'https://alanwynn.me', 'com.apple.Automator');
+$notifier->readDir();
