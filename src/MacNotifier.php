@@ -34,7 +34,7 @@ class MacNotifier {
 
     public function notify($title, $body, $url = null, $sender = null)
     {
-        $filename     = "Molekula/notifications/" . microtime(TRUE) . ".sh";
+        $filename     = "notifications/" . microtime(TRUE) . ".sh";
         $notification = $this->getNotification($title, $body, $url, $sender);
 
         $this->filesystem->write($filename, $notification);
@@ -43,7 +43,7 @@ class MacNotifier {
     public function uploadFile($file, $filename)
     {
         $stream = fopen($file, 'r+');
-        $location = "Molekula/sql/" . $filename;
+        $location = "sql/" . $filename;
 
         $this->filesystem->putStream($location, $stream);
     }
