@@ -4,7 +4,7 @@ use Dropbox\Client;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Dropbox\DropboxAdapter as Adapter;
 
-class MacNotifier {
+class MacNotifierDropbox {
 
     protected $filesystem;
 
